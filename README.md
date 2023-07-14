@@ -4,7 +4,8 @@
 
 ### exercise 1
 
-`
+
+```bash
 ABC@DESKTOP-8KGAEGA MINGW64 ~
 $ cd Desktop/
 
@@ -113,4 +114,37 @@ To https://github.com/uwumukiza123/git_exercise.git
 
 ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/git-exercise (dev)
 $
-`
+```
+ ## Bundle 2
+
+ ### exercise 1
+ ```bash
+ ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/git-exercise (ft/bundle-2)
+$ git add services.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/git-exercise (ft/bundle-2)
+$ git commit -m 'add service file'
+[ft/bundle-2 f5ea35d] add service file
+ 1 file changed, 11 insertions(+)
+ create mode 100644 services.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/git-exercise (ft/bundle-2)
+$ git push origin ft/bundle-2
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 937 bytes | 234.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/uwumukiza123/git_exercise/pull/new/ft/bundle-2
+remote:
+To https://github.com/uwumukiza123/git_exercise.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/git-exercise (ft/bundle-2)
+$
+
+ ```
