@@ -148,3 +148,281 @@ ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/git-exercise (ft/bundle-2)
 $
 
  ```
+
+ ## Bundle 3
+
+### exercise 1
+
+```bash
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/team-page)
+$ ls
+README.md  index.html  services.html  team.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/team-page)
+$ git add team.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/team-page)
+$ git commit -m 'add team page'
+[ft/team-page 8bf01b9] add team page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 team.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/team-page)
+$ git push origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 475 bytes | 475.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/uwumukiza123/git_exercise/pull/new/ft/team-page
+remote:
+To https://github.com/uwumukiza123/git_exercise.git
+ * [new branch]      ft/team-page -> ft/team-page
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/team-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (main)
+$ git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/contact-page)
+$
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/contact-page)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/team-page)
+$ git log
+commit 8bf01b9c67c7e2347617c8d10f14909a00eaf5c0 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Tue Jul 25 11:37:20 2023 +0200
+
+    add team page
+
+commit 9820a3d649b15493e300ffd916322afa21f29893 (origin/ft/service-redesign, ft/service-redesign)
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Fri Jul 14 07:30:42 2023 +0200
+
+    add bundle2 on readme file
+
+commit 8719f36e7488fa42b87b5003ff4ac82eef06cc5b
+Merge: 7cf4c5e 4547740
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Fri Jul 14 07:28:19 2023 +0200
+
+    merged main with ft/service-redesign branches
+
+commit 4547740c57540079efe32b3cdb4cf3c90a972dcc (origin/main, origin/HEAD, main, ft/contact-page)
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Fri Jul 14 07:00:33 2023 +0200
+
+    changed service file
+
+commit 7cf4c5e07d5c469122513221e8377ed3990060ec
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Fri Jul 14 06:49:55 2023 +0200
+
+    chenged service.html file
+
+commit 215113247105cce17bf82255aac2fa412e125d62 (origin/ft/bundle-2)
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Fri Jul 14 06:15:33 2023 +0200
+
+    rename home to index
+
+commit 17a713407ea7b3318fb9a93c05e3ba0007c0a155
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Fri Jul 14 06:06:15 2023 +0200
+
+    add bundle 2-exercise1 ro readme file
+
+commit f5ea35d02a9705053994e200d7c06b9e59cb6b5f
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Fri Jul 14 05:13:29 2023 +0200
+
+    add service file
+
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/team-page)
+$
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/team-page)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/contact-page)
+$ git cherry-pick 8bf01b9c67c7e2347617c8d10f14909a00eaf5c0
+[ft/contact-page e1ad7a0] add team page
+ Date: Tue Jul 25 11:37:20 2023 +0200
+ 1 file changed, 12 insertions(+)
+ create mode 100644 team.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/contact-page)
+$ ls
+README.md  index.html  services.html  team.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/contact-page)
+$ touch contact.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/contact-page)
+$ ls
+README.md  contact.html  index.html  services.html  team.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/contact-page)
+$ git add contact.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/contact-page)
+$ git commit -m 'add contact page'
+[ft/contact-page c13c34a] add contact page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 contact.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/contact-page)
+$ git push origin ft/contact-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 842 bytes | 421.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/uwumukiza123/git_exercise/pull/new/ft/contact-page
+remote:
+To https://github.com/uwumukiza123/git_exercise.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/contact-page)
+$
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/faq-page)
+$ touch faq.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/faq-page)
+$ git add faq.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/faq-page)
+$ git commit -m 'add fag page'
+[ft/faq-page db14699] add fag page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/faq-page)
+$ git push origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 450 bytes | 450.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/uwumukiza123/git_exercise/pull/new/ft/faq-page
+remote:
+To https://github.com/uwumukiza123/git_exercise.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/faq-page)
+$ git revert 8bf01b9c67c7e2347617c8d10f14909a00eaf5c0
+[ft/faq-page 0714e2e] Revert "add team page"
+ 1 file changed, 12 deletions(-)
+ delete mode 100644 team.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/faq-page)
+$ git log
+commit 0714e2e7ba5de63289f7c1c241b579738a1e1675 (HEAD -> ft/faq-page)
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Tue Jul 25 12:16:00 2023 +0200
+
+    Revert "add team page"
+
+    This reverts commit 8bf01b9c67c7e2347617c8d10f14909a00eaf5c0.
+
+commit db14699fc47e42e7ab556c92b42fe945a24d31da (origin/ft/faq-page)
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Tue Jul 25 12:10:59 2023 +0200
+
+    add fag page
+
+commit c13c34a4dc2bd820dfe0cfeb3dc6b6c931719a2e (origin/ft/contact-page, ft/contact-page)
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Tue Jul 25 11:55:22 2023 +0200
+
+    add contact page
+
+commit e1ad7a02a7d9fde4eb1c5543db6d081fa9e936be
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Tue Jul 25 11:37:20 2023 +0200
+
+    add team page
+
+commit 4547740c57540079efe32b3cdb4cf3c90a972dcc (origin/main, origin/HEAD, main)
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Fri Jul 14 07:00:33 2023 +0200
+
+    changed service file
+
+commit 215113247105cce17bf82255aac2fa412e125d62 (origin/ft/bundle-2)
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Fri Jul 14 06:15:33 2023 +0200
+
+    rename home to index
+
+commit 17a713407ea7b3318fb9a93c05e3ba0007c0a155
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Fri Jul 14 06:06:15 2023 +0200
+
+    add bundle 2-exercise1 ro readme file
+
+commit f5ea35d02a9705053994e200d7c06b9e59cb6b5f
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Fri Jul 14 05:13:29 2023 +0200
+
+    add service file
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/faq-page)
+$ git add .
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/faq-page)
+$ git commit -m 'revert the commit on team page'
+On branch ft/faq-page
+nothing to commit, working tree clean
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/faq-page)
+$ git push orogin ft/faq-page
+fatal: 'orogin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/faq-page)
+$ git push origin ft/faq-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 285 bytes | 142.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/uwumukiza123/git_exercise.git
+   db14699..0714e2e  ft/faq-page -> ft/faq-page
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/faq-page)
+$
+
+```
