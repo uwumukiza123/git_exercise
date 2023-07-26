@@ -516,3 +516,53 @@ ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/home-page-rede
 $
 
 ```
+
+## Bundle 4
+
+### exercise 1
+
+```bash
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (main)
+$ git remote add git-copy https://github.com/uwumukiza123/git_exercise2.git
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (main)
+$ git remote
+git-copy
+origin
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (main)
+$ git add home.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (main)
+$ git commit -m 'add home page'
+[main 6e6b6be] add home page
+ 1 file changed, 13 insertions(+)
+ create mode 100644 home.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (main)
+$ git push origin
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 474 bytes | 474.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/uwumukiza123/git_exercise.git
+   24e875a..6e6b6be  main -> main
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (main)
+$ git push git-copy
+Enumerating objects: 46, done.
+Counting objects: 100% (46/46), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (39/39), done.
+Writing objects: 100% (46/46), 7.98 KiB | 1.33 MiB/s, done.
+Total 46 (delta 21), reused 17 (delta 6), pack-reused 0
+remote: Resolving deltas: 100% (21/21), done.
+To https://github.com/uwumukiza123/git_exercise2.git
+ * [new branch]      main -> main
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (main)
+$
+```
