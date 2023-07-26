@@ -566,3 +566,100 @@ To https://github.com/uwumukiza123/git_exercise2.git
 ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (main)
 $
 ```
+
+## Bundle 4
+
+### Exercise 2
+
+```bash
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> git add .\README.md
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> git commit -m 'add Bundle 4. exercise 1 on readme file'
+ 1 file changed, 50 insertions(+)
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 655 bytes | 327.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> git add .\footer.html
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> add .\footer.html
+add : The term 'add' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was  
++ add .\footer.html
++ ~~~
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> git add .\footer.html
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> git commit -m 'add footer file'
+[ft/footer b039fd5] add footer file
+ create mode 100644 footer.html
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> git add .\footer.html
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> git commit -m 'add changes to footer page'
+[ft/footer f56e147] add changes to footer page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> git push --set-upstream origin ft/footer
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 737 bytes | 105.00 KiB/s, done.
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/uwumukiza123/git_exercise/pull/new/ft/footer
+remote:
+To https://github.com/uwumukiza123/git_exercise.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> git checkout -b ft/squashing
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> git merge --squash ft/footer
+Updating 348f08d..f56e147
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+ create mode 100644 footer.html
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> git commit -m 'footer changes squashing'
+[ft/squashing 6a340b3] footer changes squashing
+ 1 file changed, 13 insertions(+)
+ create mode 100644 footer.html
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> git log
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Wed Jul 26 13:16:54 2023 +0200
+
+    footer changes squashing
+
+Author: Laetitia UWUMUKIZA <uwumukizalaetitia@gmail.com>
+Date:   Wed Jul 26 12:40:07 2023 +0200
+
+    add Bundle 4. exercise 1 on readme file
+
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> git push
+fatal: The current branch ft/squashing has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/squashing
+
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> git push --set-upstream origin ft/squashing
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 470 bytes | 156.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/uwumukiza123/git_exercise/pull/new/ft/squashing
+remote:
+To https://github.com/uwumukiza123/git_exercise.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+PS C:\Users\ABC\Desktop\ALL IN ONE\git_exercise> ```
