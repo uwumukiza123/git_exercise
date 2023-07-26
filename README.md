@@ -426,3 +426,93 @@ ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/faq-page)
 $
 
 ```
+
+## Bundle 3
+
+### exercise 1
+```bash
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (main)
+$ git add index.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (main)
+$ git commit -m 'add index file'
+[main 24e875a] add index file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 401 bytes | 200.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/uwumukiza123/git_exercise.git
+   4547740..24e875a  main -> main
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (main)
+$ git checkout -b ft/home-page-redesign
+fatal: a branch named 'ft/home-page-redesign' already exists
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (main)
+$ git rebase main
+Current branch main is up to date.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (main)
+$ git checkout
+Your branch is up to date with 'origin/main'.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/home-page-redesign)
+$
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/home-page-redesign)
+$ ls
+README.md  contact.html  faq.html  index.html  services.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/home-page-redesign)
+$ git add index.html
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/home-page-redesign)
+$ git commit -m 'add some changes to an index file'
+[ft/home-page-redesign 576e33f] add some changes to an index file
+ 1 file changed, 8 insertions(+)
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (17/17), 4.38 KiB | 1.09 MiB/s, done.
+Total 17 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/uwumukiza123/git_exercise/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/uwumukiza123/git_exercise.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+
+ABC@DESKTOP-8KGAEGA MINGW64 ~/Desktop/ALL IN ONE/git_exercise (ft/home-page-redesign)
+$
+
+```
